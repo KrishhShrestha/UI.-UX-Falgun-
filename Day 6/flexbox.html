@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .child {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        text-align: center;
+        border-radius: 12pxz2;
+        
+      }
+
+      .parent {
+        border: 10px solid blue;
+        
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        /* justify-content: end; */
+        /* justify-content: start; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* align-items: end; */
+        /* align-items: center; */
+        align-items: end;
+        /* flex-wrap: wrap-reverse; */
+        flex-wrap: wrap;
+        /* row-gap: 10px; */
+        column-gap: 20px;
+
+
+        align-items: center ;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1) justify => Row<br>
+        <li>justify-content= start,center, list, space- around,evenly, between</li>
+    2) align => column
+
+    item-each 
+    contain- all -->
+
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+    </div>
+  </body>
+</html>
